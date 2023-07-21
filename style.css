@@ -30,9 +30,9 @@ body,html{
   z-index:2;
   position:absolute;
   margin-top: 10%;
-  width:35%;
+  width:545px;
 
-  font-size: 125px;
+  font-size: 100px;
   font-weight: 800;
   outline: none;
   text-transform: uppercase;

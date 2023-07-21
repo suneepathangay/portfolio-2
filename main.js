@@ -81,6 +81,7 @@ const sun=new THREE.Mesh(
     new THREE.MeshBasicMaterial({map:sunTexture,opacity:1,transparent:true}),
 
 )
+sun.position.set(5,0,0)
 
 scene.add(sun)
 
