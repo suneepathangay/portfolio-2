@@ -72,26 +72,26 @@ Array(200).fill().forEach(addStar)
 
 //adding the sun
 
-// const sphere=new THREE.SphereGeometry(8,64,64)
+const sphere=new THREE.SphereGeometry(8,64,64)
 
-// const sunTexture=new THREE.TextureLoader().load('./assets/sun.jpeg')
+const sunTexture=new THREE.TextureLoader().load('/sun.jpeg')
 
-// const sun=new THREE.Mesh(
-//     sphere,
-//   new THREE.MeshBasicMaterial({map:sunTexture,opacity:1,transparent:true}),
+const sun=new THREE.Mesh(
+    sphere,
+  new THREE.MeshBasicMaterial({map:sunTexture,opacity:1,transparent:true}),
 
-// )
-// sun.position.set(5,0,0)
+)
+sun.position.set(5,0,0)
 
-// scene.add(sun)
+scene.add(sun)
 
 
-const geometry=new THREE.SphereGeometry(8,64,64)
+// const geometry=new THREE.SphereGeometry(8,64,64)
 
-const material = new THREE.MeshBasicMaterial( { color: 0xffff00 } ); 
-const sphere = new THREE.Mesh( geometry, material ); 
+// const material = new THREE.MeshBasicMaterial( { color: 0xffff00 } ); 
+// const sphere = new THREE.Mesh( geometry, material ); 
 
-scene.add(sphere)
+// scene.add(sphere)
 
 
 
