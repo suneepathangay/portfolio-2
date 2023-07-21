@@ -74,7 +74,7 @@ Array(200).fill().forEach(addStar)
 
 const sphere=new THREE.SphereGeometry(8,64,64)
 
-const sunTexture=new THREE.TextureLoader().load('/public/vite.svg')
+const sunTexture=new THREE.TextureLoader().load('/public/images/sun.jpeg')
 
 const sun=new THREE.Mesh(
     sphere,
