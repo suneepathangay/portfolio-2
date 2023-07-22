@@ -61,6 +61,9 @@ section{
   padding:2%;
 }
 
+/* Skills Section */
+
+
 section h2{
   font-size: 4rem;
 }
@@ -211,7 +214,7 @@ span{
 }
 
 
-
+/* Project stuff */
 
 .project-container{
   display: flex;
@@ -255,6 +258,71 @@ span{
 .project-card h2{
   background-color: gray;
 }
+
 p{
   padding:2%
+}
+
+
+
+
+/* Intro Section */
+
+.subsec{
+  display: flex;
+  gap: 4rem;
+}
+.buttons{
+  margin-left: 20%;
+}
+
+
+.about{
+  
+  margin-top: 15%;
+  
+}
+
+.resume{
+  border: none;
+
+  border-radius: 25%;
+  background-color: rgb(45, 45, 218);
+  font-family:'Poppins','sans-serif';
+  color: white;
+  font-weight: 400;
+  padding-left: 2%;
+  padding-right: 2%;
+  max-width: 200px;
+  max-height: 400px;
+
+}
+
+.resume:hover{
+  background-color: rgb(204, 204, 233);
+}
+
+
+.text{
+  background-color: black;
+}
+
+
+.button-contain{
+  display:flex;
+  
+}
+
+
+.icon{
+  margin-left: 2%;
+  width: 50px;
+  height: 50px;
+  
+}
+
+.profile{
+  width: 200px;
+  height:200px;
+  border-radius: 50%;
 }
