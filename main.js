@@ -74,19 +74,39 @@ Array(200).fill().forEach(addStar)
 
 //adding the sun
 
-const sphere=new THREE.SphereGeometry(8,64,64)
+// const sphere=new THREE.SphereGeometry(8,64,64)
 
-const sunTexture=new THREE.TextureLoader().load('/public/images/sun.jpeg')
+// const sunTexture=new THREE.TextureLoader().load('/public/images/sun.jpeg')
 
-const sun=new THREE.Mesh(
-    sphere,
-  new THREE.MeshBasicMaterial({map:sunTexture,opacity:1,transparent:true}),
+// const sun=new THREE.Mesh(
+//     sphere,
+//   new THREE.MeshBasicMaterial({map:sunTexture,opacity:1,transparent:true}),
 
+// )
+// sun.position.set(-2,0,0)
+
+
+// scene.add(sun)
+
+//adding the torus
+
+const sphereGeo=new THREE.SphereGeometry(4,64,64)
+const sphereMaterial=new THREE.MeshBasicMaterial({color:0xffffff,wireframe:true})
+
+const sphere=new THREE.Mesh(
+  sphereGeo,sphereMaterial
 )
-sun.position.set(-2,0,0)
+
+scene.add(sphere)
+
+const geometry=new THREE.TorusGeometry(10,3,16,100)
+const material = new THREE.MeshBasicMaterial( { color: 0xFF6347,wireframe:true } ); 
+const torus=new THREE.Mesh(
+  geometry,material
+)
+scene.add(torus)
 
 
-scene.add(sun)
 
 
 // const geometry=new THREE.SphereGeometry(8,64,64)
