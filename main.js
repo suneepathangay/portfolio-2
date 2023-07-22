@@ -70,6 +70,8 @@ const addStar=()=>{
 Array(200).fill().forEach(addStar)
 
 
+
+
 //adding the sun
 
 const sphere=new THREE.SphereGeometry(8,64,64)
@@ -81,7 +83,8 @@ const sun=new THREE.Mesh(
   new THREE.MeshBasicMaterial({map:sunTexture,opacity:1,transparent:true}),
 
 )
-sun.position.set(5,0,0)
+sun.position.set(-2,0,0)
+
 
 scene.add(sun)
 
@@ -99,10 +102,13 @@ scene.add(sun)
 
 
 
+
 const loop=()=>{
   controls.update()
   renderer.render(scene,camera)
   window.requestAnimationFrame(loop)
+  sun.rotation.y+=0.005;
+ 
 }
 
 loop()
