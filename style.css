@@ -315,3 +315,14 @@ footer .container{
 footer .container .title{
   font-size: x-large;
 }
+
+@media (max-width: 768px) {
+  .project-card {
+      flex-direction: column;
+      max-width: 100%;
+  }
+
+  .project-card img {
+      max-width: 100%;
+  }
+}
