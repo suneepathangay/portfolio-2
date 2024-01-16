@@ -6,453 +6,377 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
     <title>Suneet's Portfolio</title>
 </head>
 
 <body>
-  <header>
-    <h1 class="head-text">Welcome to Suneets Portfolio</h1>
-    <canvas class="webgl"></canvas>
-  </header>
+    <header>
+        <div class="typing-text">
+            <p class="typed-text">
+                Hey its Suneet. Welcome to my Portfolio :)
+            </p>
+        </div>
+        <canvas class="webgl"></canvas>
+    </header>
 
-  <section id="intro">
-    <h2>About me</h2>
-    <div class="intro-container">
-        
-
-        
-
+    <div class="main">
         <div class="about">
-       <div class="subsec">
-       <img class="profile" src="/images/suneet.jpeg">
-       
-       <div class="texts">
-        <p class="text">
-           Hello, my name is Suneet Pathangay and I am sophomore studying computer sciencnce at Northeastern.
+            <p class="title">About Me</p>
 
-        </p>
-
-        <p class="text">
-           I am motivated and passionate for many different areas of software development.
-        </p>
-
-        <p class="text">
-           I have experience working in a high paced enviornment delievering frontend and backend solutions.
-        </p>
-       </div>
-   </div>
-       
-       
-
-
-        <div class="buttons">
-           <h2> Links </h2>
-
-       <div class="button-contain">
-        <button class="resume" onclick="window.open('/assets/resume.pdf')">
-           Resume
-        </button>
-
-        <img src="/images/linkedin.png" alt="LinkedIn Page" class="icon" onclick="window.open('https://www.linkedin.com/in/suneet-pathangay-25137021a/', '_blank')"/>
-        <img src="/images/github.png" alt="GitHub Page" class="icon" onclick="window.open('https://github.com/suneepathangay', '_blank')"/>
-
-       </div>
-
-        
-       </div>
-
-       </div>
-
-   </div>
-
-  </section>
-
-
-
-  <section id="experience">
-    <h2>Work Experience</h2>
-      <div class="cards-container">
-        <div class="card">
-          <img src="/public/images/pantsuits.jpeg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4><b>Pantsuit Professionals(July 2023-present)</b></h4>
+            <p class="text">My Name is Suneet Pathangay. I am a computer science student at Northeastern University.</p>
+            <p>I have experience working with a wide variety of full stack frameworks through a combination of internships and projects.</p>
             
-            <h3>Software Engineer Intern</h3>
-
             
-             
-              <p>Worked on developing Typescript/Angular components </p>
+            
 
-              <p>Connected components with PHP(Lavarel) server/database</p>
+            <div class="container">
 
-              <p>Responsible for redesigning website for upcoming launch</p>
+            <img class="profile" src="public/images/suneet.jpeg"/>
 
-              <p>Worked closely with team lead to ensure quality and timing</p>
+            <img class="git" src="/public/images/github.svg" onclick="test()" >
 
+            <img class="link" src="/public/images/linkedin.png" onclick="linkedin()" >
 
-      
-
-          
-
-
-          </div>
+            <button class="button" onclick="resume()">Resume</button>
+            </div>
         </div>
 
 
-        <div class="card">
-          <img src="/public/images/hackweekly.jpeg" alt="Avatar" style="width:100%">
-          <div class="container">
-            <h4><b>Hack Weekly (June 2023-present)</b></h4>
-            <h3>Open Source Developer</h3>
-          
-            <p>Joined an open source team on Github to work on new projects every month or so</p>
 
-            <p>Worked on frontend team utilizing React/Typescript on a fullstack chess game.</p>
+        <div class="experience">
+            <p class="title">Experience</p>
+            <div class="container">
+                <div class="sub">
+                    <div class="sub2">
+                    <p>Backend Engineer Intern @ CompSciLib </p>
 
-            <p>Responsible for handling user flow/authentication along with API integration into Node.js</p>
-          
+                    <p> Oct 2023-Dec 2023</p>
+                    </div>
+                    <div class="list-contain">
+                    <li>
+                        Worked with the Java Spring framework to deliever new features such as bitshift calculator.
+                    </li>
 
-          </div>
+                    <li>
+                        Wrote extensive comprehensive JUnit tests and worked with internal tools.
+                    </li>
+                    <li>
+                        Wrote code within MVC model constraints.
+                    </li>
+                    </div>
+                </div>
+                <div class="sub">
+                    <div class="sub2">
+                        <p>Software Engineer Intern @ Pantsuit Professionals </p>
+    
+                        <p> June 2023-Aug 2023</p>
+
+                    </div>
+
+                    <div class="list-contain">
+                        <li>
+                            Worked in TypeScript/Angular.js on developing and integrating several frontend components
+                        </li>
+    
+                        <li>
+                          Worked with PHP/Laravel framework and database, inputting static, dynamic pages.
+                        </li>
+                        <li>
+                            Wrote code within MVC model constraints.
+                        </li>
+
+                        <li>
+                            Designed and developed UI components to comply with mobile and desktop viewports
+                        </li>
+                        </div>
+                
+                </div>
+
+            </div>
+            
+
+
+
+
+        </div>   
+
+
+        <div class="skills">
+            <p class="title">Skills</p>
+            <div class="contain1">
+            <div class="container">
+            
+                <div class="skill-card" id="python"  onmouseenter="showPop(event)" onmouseleave="closePop(event)">
+                    <img class="skill-image" src="/public/images/python.jpeg">
+    
+                    <div class="card_details">
+                        <div class="name">Python</div>
+    
+                    </div>
+    
+                    <div class="popup" >
+                        <div class="pop_text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                         </div>
+                    </div>
+    
+    
+                </div>
+                
+                
+
+                <div class="skill-card" id="angular" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
+                    <img class="skill-image" src="/public/images/angular.png">
+                    <div class="card_details">
+                        <div class="name"> Angular.js</div>
+    
+    
+                    </div>
+    
+                    <div class="popup" >
+                        <div class="pop_text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            
+                         </div>
+                    </div>
+    
+    
+                </div>
+
+                <div class="skill-card" id="java" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
+                    <img class="skill-image" src="/public/images/java.png">
+                    <div class="card_details">
+                        <div class="name"> Java</div>
+    
+    
+                    </div>
+    
+    
+                    <div class="popup" >
+                        <div class="pop_text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                         </div>
+                    </div>
+    
+                </div>
+
+                <div class="skill-card" id="flask" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
+                    <img class="skill-image" src="/public/images/flask.png">
+                    <div class="card_details">
+                        <div class="name">Flask</div>
+                    </div>
+    
+                    <div class="popup" >
+                        <div class="pop_text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                         </div>
+                    </div>
+    
+                </div>
+
+                <div class="skill-card" id="sql" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
+                    <img class="skill-image" src="/public/images/sql.png">
+                    <div class="card_details">
+                        <div class="name">SQL</div>
+    
+    
+                    </div>
+    
+                    <div class="popup" >
+                        <div class="pop_text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                         </div>
+                    </div>
+    
+                </div>
+
+                <div class="skill-card" id="nodejs" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
+                    <img class="skill-image" src="/public/images/node.png">
+                    <div class="card_details">
+                        <div class="name">Node.js</div>
+    
+    
+                    </div>
+    
+                    <div class="popup" >
+                        <div class="pop_text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                         </div>
+                    </div>
+    
+                </div>
+
+                <div class="skill-card" id="pytorch" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
+                    <img class="skill-image" src="/public/images/pytorch.png">
+                    <div class="card_details">
+                        <div class="name">Pytorch</div>
+    
+    
+                    </div>
+    
+                    <div class="popup" >
+                        <div class="pop_text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                            
+                         </div>
+                    </div>
+    
+                    
+    
+                </div>
+
+                <div class="skill-card" id="docker" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
+                    <img class="skill-image" src="/public/images/docker.webp">
+                    <div class="card_details">
+                        <div class="name">Docker</div>
+    
+    
+                    </div>
+    
+                    <div class="popup" >
+                        <div class="pop_text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                         </div>
+                    </div>
+       
+                </div>
+
+                <div class="skill-card" id="react" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
+                    <img class="skill-image" src="/public/images/react-logo-1.png">
+                    <div class="card_details">
+                        <div class="name">React</div>
+    
+    
+                    </div>
+    
+                    <div class="popup" >
+                        <div class="pop_text">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                         </div>
+                    </div>
+       
+                </div>
+    
+
+            </div>
+            
+         </div>
+
         </div>
+
+
+        <div class="projects">
+            
+            <div>
+                <p class="title">Projects</p>
+            </div>
+            <div class="holder">
+            <div class="container">
+                <div class="project-card">
+                    
+                    <div class="sub">
+                    <div class="card-details">
+                        <div class="name">Chess Application</div>
+
+                    </div>
+
+                    <div class="card-content">
+                        <p>Chess application built fully in Java using Java Swing</p>
+
+                        <img id="chess-img" src="public/images/chess.png">
+
+
+                        <button onclick="openChess()" id="git-button">Github Repo</button>
+
+                    </div>
+                    </div>
+                 </div>
+            
+            </div>
+
+            <div class="container">
+                <div class="project-card">
+                    
+                    <div class="sub">
+                    <div class="card-details">
+                        <div class="name">Sum News</div>
+
+                    </div>
+
+                    <div class="card-content">
+                        <p>News summarization applicaition utilisng NLP</p>
+
+                        <img id="chess-img" src="public/images/news1.png">
+
+
+                        <button onclick="openSum()" id="git-button">Github Repo</button>
+
+                    </div>
+                    </div>
+                 </div>
+            
+            </div>
+        </div>
+
         
 
-
-      </div>
-  </section>
-
-  <section id="skills">
-    <div id="whole">
-      <div class="custom-head">
-          <h1>Skills and Frameworks</h1>
-          
-      </div>
-  
-      <div class="tablecontainer">
-          <h2>Hover on card to see the experience level</h2>
-  
-          <div class="skills-cards">
-
-            <div class="skill-card" id="python"  onmouseenter="showPop(event)" onmouseleave="closePop(event)">
-              <img class="skill-image" src="/public/images/react.png">
-
-              <div class="card_details">
-                  <div class="name">React.js</div>
-
-              </div>
-
-              <div class="popup" >
-                  <div class="pop_text">
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star checked"></span>
-                      <span class="fa fa-star"></span>
-                   </div>
-              </div>
-
-
-          </div>
-              
-  
-              <div class="skill-card" id="python"  onmouseenter="showPop(event)" onmouseleave="closePop(event)">
-                  <img class="skill-image" src="/public/images/python.jpeg">
-  
-                  <div class="card_details">
-                      <div class="name">Python</div>
-  
-                  </div>
-  
-                  <div class="popup" >
-                      <div class="pop_text">
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star"></span>
-                       </div>
-                  </div>
-  
-  
-              </div>
-  
-              <div class="skill-card" id="angular" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
-                  <img class="skill-image" src="/public/images/angular.png">
-                  <div class="card_details">
-                      <div class="name"> Angular.js</div>
-  
-  
-                  </div>
-  
-                  <div class="popup" >
-                      <div class="pop_text">
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          
-                       </div>
-                  </div>
-  
-  
-              </div>
-  
-              <div class="skill-card" id="java" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
-                  <img class="skill-image" src="/public/images/java.png">
-                  <div class="card_details">
-                      <div class="name"> Java</div>
-  
-  
-                  </div>
-  
-  
-                  <div class="popup" >
-                      <div class="pop_text">
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star"></span>
-                       </div>
-                  </div>
-  
-              </div>
-  
-              <div class="skill-card" id="flask" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
-                  <img class="skill-image" src="/public/images/flask.png">
-                  <div class="card_details">
-                      <div class="name">Flask</div>
-                  </div>
-  
-                  <div class="popup" >
-                      <div class="pop_text">
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star"></span>
-                       </div>
-                  </div>
-  
-              </div>
-  
-              <div class="skill-card" id="sql" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
-                  <img class="skill-image" src="/public/images/sql.png">
-                  <div class="card_details">
-                      <div class="name">SQL</div>
-  
-  
-                  </div>
-  
-                  <div class="popup" >
-                      <div class="pop_text">
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star"></span>
-                       </div>
-                  </div>
-  
-              </div>
-  
-              <div class="skill-card" id="nodejs" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
-                  <img class="skill-image" src="/public/images/node.png">
-                  <div class="card_details">
-                      <div class="name">Node.js</div>
-  
-  
-                  </div>
-  
-                  <div class="popup" >
-                      <div class="pop_text">
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star"></span>
-                       </div>
-                  </div>
-  
-              </div>
-  
-              <div class="skill-card" id="pytorch" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
-                  <img class="skill-image" src="/public/images/pytorch.png">
-                  <div class="card_details">
-                      <div class="name">Pytorch</div>
-  
-  
-                  </div>
-  
-                  <div class="popup" >
-                      <div class="pop_text">
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star"></span>
-                          
-                       </div>
-                  </div>
-  
-                  
-  
-              </div>
-  
-              <div class="skill-card" id="docker" onmouseenter="showPop(event)" onmouseleave="closePop(event)">
-                  <img class="skill-image" src="/public/images/docker.webp">
-                  <div class="card_details">
-                      <div class="name">Docker</div>
-  
-  
-                  </div>
-  
-                  <div class="popup" >
-                      <div class="pop_text">
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                          <span class="fa fa-star checked"></span>
-                       </div>
-                  </div>
-     
-              </div>
-  
-              
-  
-  
-  
-  
-  
-  
-     
-          </div>
-  
-          
-  
-  
-  
-      </div>
-  </div>
-
-
-
-  </section>
-
-
-  <section id="projects">
-    <div class="project-container">
-        <h1>Projects</h1>
-
-        <div class="project-cards">
-            <div class="project-card">
-                <img src="/public/images/movie.png">
-                
-                <h2>Movie Search Engine</h2>
-
-                <p>Developed a movie search engine for a dataset of over 40,000 movies</p>
-
-                <p>Utilised an embedding model to convert each title in a 384 dimensional vector</p>
-
-                <p>Stored those vectors in a Pinecone vector database</p>
-
-                <p>Implemented a cosine similiarity algorithm to find the vectors most similar to query</p>
-
-                <p>Created a simple UI and Flask server to be able to interact with the user.</p>
-
-                <!-- <img class='github' src="/assets/github.png" alt="GitHub Page" class="icon" onclick="window.open('https://github.com/suneepathangay', '_blank')"/> -->
-
-                <div class="github-container">
-                    <img src="/public/images/github.png" alt="GitHub Page" class="icon" onclick="window.open('https://github.com/suneepathangay/Movie-Search-Engine', '_blank')"/>
-
-                </div>
-
-
-            </div>
-
-
-            <div class="project-card">
-                <img src="/public/images/news.png">
-                
-                <h2>Sum News</h2>
-
-                <p>Designed a full stack application tosummarize newsarticles within 3-4 sentences.</p>
-
-                <p> Users enter in a query which is sent to a News API to generate news articles.</p>
-
-                <p>Developed an NLP algorithm to extract the most meaningful sentences from the article</p>
-
-                <p>React.js/Next.js was used on the frontend,backend built with Flask/Express.js</p>
-
-                <p>(Two repositories for frontend and backend)</p>
-
-                <div class="github-container">
-                    <img src="/public/images/github.png" alt="GitHub Page" class="icon" onclick="window.open('https://github.com/suneepathangay/Sum-News-Back', '_blank')"/>
-
-                </div>
-
-
-
-            </div>
-
-
-            <div class=" project-card">
-                <img src="/public/images/sport.png">
-                
-                <h2>Gambling Recovery Application</h2>
-
-                <p>Application that allows users to simulate NBA betting on real time games</p>
-
-                <p> Utilized React.js for the front-end while back-end was built with a Flask framework utilizing Python along with a SQLite
-                    database to store user info.</p>
-
-                <p>Reverse engineered NBA API’s to get JSON data for current week's games.</p>
-
-                <p>
-                    Reverse engineered DraftKings API to get data on betting odds.
-                </p>
-
-                <p>React.js/Next.js was used on the frontend,backend built with Flask/Express.js</p>
-
-                <p>Designed formula to calculate and deliver payouts to user accounts.</p>
-
-                <div class="github-container">
-                    <img src="/public/images/github.png" alt="GitHub Page" class="icon" onclick="window.open('https://github.com/suneepathangay/GamblingRecover', '_blank')"/>
-
-                </div>
-
-
-
-            </div>
 
 
         </div>
 
-        
-        
-    
-    
-    
-    
-    
-    
-    
+
+       
+
+
+
     </div>
 
 
-  </section>
+    <script type="module" src="/main.js">
 
-  
-  <script>   function showPop(event) {
-    const card = event.target;
-    const popup = card.querySelector('.popup');
-    popup.style.visibility = 'visible';
-    popup.style.display='block'
-  }
-  
-  function closePop(event) {
-    const card = event.target;
-    const popup = card.querySelector('.popup');
-    popup.style.visibility = 'hidden';
-  }
-</script>
-  <script type="module" src="/main.js"></script>
-</body>
+        
+        
+    </script>
+
+    <footer>
+        <div class="container">
+            <p class="title">Contact</p>
+            <div>
+            <p>Email: pathangay.s@northeastern.edu</p>
+        </div>
+
+        </div>
+    </footer>
 </html>

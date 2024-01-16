@@ -1,152 +1,141 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 @import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500;600&display=swap");
 
+
 *{
   margin:0;
-  background:black;
+
   font-family: "Poppins", sans-serif;
 }
 
 header{
   display:flex;
-  color:white;
   align-items: center;
   
 }
 
-.head-text{
-  width: 400px;
-  font-size: 5rem;
-  
-  text-transform: uppercase;
 
-  background: linear-gradient(
-    135deg,
-    #5335cf 0%,
-    #de005e 25%,
-    #f66e48 50%,
-    #de005e 75%,
-    #5335cf 100%
-  );
-  background-size: 400%;
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: animate 10s linear infinite;
-  width: 450px;
-  margin-top: 150px;
-  height:600px;
-  
+.typing-text {
+  overflow: hidden;
+  margin-top: 20%;
 }
 
-@keyframes animate {
+
+
+.typed-text {
+  display: inline-block;
+  white-space: nowrap; 
+  overflow: hidden;
+  animation: typing 3s steps(30) forwards;
+  font-size: xx-large;
+
+}
+
+
+
+.webgl{
+  margin: auto;
+}
+
+.about{
+  margin-left: 10%;
+}
+
+.about .title{
+  font-size: X-large;
+}
+
+.about .text{
+  margin-top: 10px;
+}
+
+
+
+@keyframes typing {
+  from {
+      width: 0;
+  }
   to {
-    background-position: 400%;
+      width: 100%;
   }
 }
 
-
-p{
-  color:white
-}
-
-
-
-section{
-  color:white;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-  flex-direction: column;
-  padding:2%;
-}
-
-/* Skills Section */
-
-
-section h2{
-  font-size: 4rem;
-}
-
-img{
+.profile{
+  width: 100px;
+  height:100px;
   border-radius: 50%;
-  width: 100%;
+  margin-top: 1%;
 }
 
-.card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-  border: 4px solid white;
-  background-color: gray;
-  padding: 2%;
-  overflow: hidden;
-  max-width: 300px;
-  margin:1%;
+.git{
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  margin-top: 1%;
+}
+
+.git:hover{
+  opacity: 0.7;
+}
+
+.link{
+  width: 50px;
+  height:50px;
+  border-radius: 50%;
+  margin-top: 1%;
   
-  
+}
+
+.link:hover{
+  opacity: 0.7;
+}
+
+.button:hover{
+  opacity: 0.7;
+}
+
+.button{
+  background-color: coral;
+  border-radius: 10%;
+  border: none;
 }
 
 
-.cards-container{
-  display:flex;
-  
-}
-
-h4{
-  background-color: gray;
-}
-
-b{
-  background-color: gray;
-}
-h3{
-  background-color: gray;
-}
-p{
-  background-color: gray;
-}
 
 
-.custom-head{
-  color:white;
-  font-family:'Poppins',sans-serif;
+.container{
   display: flex;
-  padding:2%;
-  justify-content: center;
-}
-
-.custom-head h1{
-font-size: 75px;
-}
-
-
-.tablecontainer {
-  display: flex;
-  justify-content: center;
   align-items: center;
-  color: white;
-  font-family:'Poppins',sans-serif;
-  flex-direction: column;
-  padding: 2%;
-}
-
-.tablecontainer h2{
-  overflow: hidden;
-  white-space: nowrap;
-  font-size: 50px;
-}
-
-.skills-cards{
+  gap: 5%;
   
+}
+
+.skills {
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 5%;
+}
+
+.skills .title {
+  font-size: x-large;
+}
+
+.skills .container {
   display: grid;
-  gap: 2rem;
   grid-template-columns: repeat(3, 1fr);
+  gap: 2%;
+  padding: 2%;
+  margin: 2%;
+  margin-top: 10%;
   
+
 }
 
-
-
+.skills .contain1 {
+  display: flex;
+  justify-content: center;
+}
 
 .skill-image {
   width: 250px;
@@ -157,8 +146,7 @@ font-size: 75px;
 }
 
 .skill-card {
-  /* Change background color */
-  background-color: gray;
+ 
 
   /* Add border */
   border: 1px solid #bacdd8;
@@ -180,7 +168,7 @@ font-size: 75px;
   color: white;
 }
 
-/* Style div elements that have class equal to name */
+
 .name {
   font-size: 24px;
   font-weight: 600;
@@ -189,7 +177,7 @@ font-size: 75px;
 }
 
 .card__details {
-  /* Add space around the details */
+  
   padding: 8px 8px 8px 8px;
 }
 
@@ -199,130 +187,131 @@ font-size: 75px;
 
 .popup {
   display: none; /* Initially hide the popup */
+  color: black;
 }
 
-.name{
-  background-color: gray;
-}
-
-.pop_text{
-  background-color: gray;
-}
-
-span{
-  background-color: gray;
-}
-
-
-/* Project stuff */
-
-.project-container{
+.experience{
   display: flex;
-  flex-direction: column;
+  flex-direction: column; 
   align-items: center; 
-  
+  margin-top: 10%;
 }
-.project-cards{
+
+.experience .title {
+  font-size: x-large;
+}
+
+.experience .container{
+  display: flex;
+  margin-right: 10%;
+  flex-direction: column;
+}
+
+
+.experience .container .sub .sub2{
   display: flex;
   flex-direction: row;
+  gap: 100px;
   
 }
 
-.project-card img{
-  border-radius: 50%;
-  max-width: 100%;
+
+
+.list-contain{
+  margin-top: 5%;
+  margin-left: 5%;
 }
+
+.experience .container .sub{
+  margin-top: 5%;
+}
+
+
+.projects{
+  display: flex;
+  flex-direction: column; 
+  align-items: center; 
+  margin-top: 5%;
+}
+
+.projects .title {
+  font-size: x-large;
+}
+
+
+.projects .container{
+  display: flex;
+  flex-direction: row;
+}
+
 
 .project-card {
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-  transition: 0.3s;
-  border-radius: 5px; /* 5px rounded corners */
-  border: 4px solid white;
-  background-color: gray;
-  padding: 5%;
-  overflow: hidden;
-  max-width: 350px;
-  margin: 2%;
-  
-}
-
-
-.github-container{
-  border-radius: 50%;
-  max-width: 50px; /* Set the maximum width */
-  max-height: 200px;
-  
-
-}
-
-.project-card h2{
-  background-color: gray;
-}
-
-p{
-  padding:2%
-}
-
-
-
-
-/* Intro Section */
-
-.subsec{
   display: flex;
-  gap: 4rem;
-}
-.buttons{
-  margin-left: 20%;
-}
-
-
-.about{
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  width: 100%;
+  margin: 16px;
+  justify-content: center;
+  padding: 6px;
   
-  margin-top: 15%;
-  
-}
-
-.resume{
-  border: none;
-
-  border-radius: 25%;
-  background-color: rgb(45, 45, 218);
-  font-family:'Poppins','sans-serif';
-  color: white;
-  font-weight: 400;
-  padding-left: 2%;
-  padding-right: 2%;
-  max-width: 200px;
-  max-height: 400px;
 
 }
 
-.resume:hover{
-  background-color: rgb(204, 204, 233);
+.container .sub{
+  display: flex;
+  flex-direction: column;
 }
 
-
-.text{
-  background-color: black;
+.sub .name{
+  margin-top: 3%;
 }
 
-
-.button-contain{
-  display:flex;
-  
+.sub .card-content{
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
 }
 
+#chess-img{
+  margin-top: 3%;
+}
 
-.icon{
-  margin-left: 2%;
-  width: 50px;
+#git-button{
+  margin-top: 5%;
+  max-width: 25%;
+  background-color: white;
+  border-radius: 10%;
+  margin-left: 40%;
   height: 50px;
-  
+  margin-bottom: 5%;
 }
 
-.profile{
-  width: 200px;
-  height:200px;
-  border-radius: 50%;
+#git-button:hover{
+opacity: 0.7;
+}
+
+.holder{
+  display: flex;
+  flex-direction: row;
+}
+
+#chess-img{
+  width: 400px;
+  height: 400px;
+}
+
+footer{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+
+footer .container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+footer .container .title{
+  font-size: x-large;
 }
