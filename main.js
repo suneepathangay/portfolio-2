@@ -85,6 +85,7 @@ loop()
 
 
 //script functions
+//com
 
 const test=()=>{
   window.open('https://github.com/suneepathangay')
