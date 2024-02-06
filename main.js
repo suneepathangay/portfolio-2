@@ -96,7 +96,7 @@ const linkedin=()=>{
 }
 
 const resume=()=>{
-  window.open('https://media.licdn.com/dms/document/media/D4E2DAQHCpP6a8MQNQA/profile-treasury-document-pdf-analyzed/0/1697933141863?e=1706140800&v=beta&t=v-TQgeKvn_YFEiG0nBscU-WQKJBI0hPQ07WYTvfpRuE')
+  window.open('https://publuu.com/flip-book/389406/883252')
 
 }
 
