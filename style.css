@@ -203,7 +203,6 @@ header{
 
 .experience .container{
   display: flex;
-  margin-right: 10%;
   flex-direction: column;
 }
 
@@ -212,6 +211,7 @@ header{
   display: flex;
   flex-direction: row;
   gap: 100px;
+  max-width:fit-content;
   
 }
 
@@ -219,11 +219,14 @@ header{
 
 .list-contain{
   margin-top: 5%;
-  margin-left: 5%;
+  padding: 3%;
 }
 
 .experience .container .sub{
   margin-top: 5%;
+  align-items: flex-start;
+  max-width: 60%;
+  
 }
 
 
